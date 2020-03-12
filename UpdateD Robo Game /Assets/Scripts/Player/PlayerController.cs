@@ -40,6 +40,11 @@ public class PlayerController : MonoBehaviour {
     private AudioSource myAS;
    [SerializeField]
     private AudioClip fireClip;
+
+    // for the echo effect
+    public bool isMoving = false;
+
+
 	// Use this for initialization
 	void Start () {
         myAnim = GetComponent<Animator>();
@@ -75,6 +80,11 @@ public class PlayerController : MonoBehaviour {
        
 
         myRB.velocity = new Vector2(move * maxSpeed, myRB.velocity.y);
+
+        if(move!= 0)
+        {
+            isMoving = true;
+        }
 
         if (move > 0)
         {

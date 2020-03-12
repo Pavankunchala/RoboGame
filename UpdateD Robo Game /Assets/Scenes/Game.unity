@@ -1091,8 +1091,33 @@ PrefabInstance:
       propertyPath: playerHealthSlider
       value: 
       objectReference: {fileID: 1233494937}
+    - target: {fileID: 212688224205173770, guid: 2de1baedabb7943929149bbe5adf9040,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.8862745
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2de1baedabb7943929149bbe5adf9040, type: 3}
+--- !u!1 &833013810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1327544928933158, guid: 2de1baedabb7943929149bbe5adf9040,
+    type: 3}
+  m_PrefabInstance: {fileID: 833013809}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &833013811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833013810}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7604a4e31285e4e3bbb427d1749e432d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTimeBtwnSpwns: 0.4
+  echo: {fileID: 8080940949145915756, guid: 3b16d27dad19c4df08818e6e8e720867, type: 3}
 --- !u!1 &844992980
 GameObject:
   m_ObjectHideFlags: 0
@@ -2173,7 +2198,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2102781779
 SpriteRenderer:
   m_ObjectHideFlags: 0

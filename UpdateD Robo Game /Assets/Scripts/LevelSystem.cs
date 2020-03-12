@@ -37,7 +37,7 @@ public class LevelSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        levelUpEffect.transform.position = playerHealth.transform.position;
     }
 
     public void UpdateXP(int exp)
@@ -54,7 +54,8 @@ public class LevelSystem : MonoBehaviour
             playerHealth.currentHealth = playerHealth.MaxHealth;
             playerHealth.playerHealthSlider.value = playerHealth.currentHealth;
 
-            Instantiate(levelUpEffect, leveleffectTranform.position, leveleffectTranform.rotation);
+            Instantiate(levelUpEffect, leveleffectTranform.position, leveleffectTranform.rotation); ;
+            
 
             //Destroy(levelUpEffect, 1f);
 
